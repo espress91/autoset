@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".Frist_ListPage"
+    android:background="#ffffff"
+    android:id="@+id/HomeA"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:id="@+id/ViewerLayout"
+        android:background="@drawable/baselayout_w"
+        android:visibility="gone"
+        android:gravity="end"
+        android:elevation="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:text="추가"
+            android:id="@+id/textBtnAdd"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:gravity="center|clip_vertical|center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:text="설정"
+            android:id="@+id/textBtnSetting"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:gravity="center|clip_vertical|center_horizontal"
+            android:layout_below="@+id/textBtnAdd"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:text="정보"
+            android:id="@+id/textBtnInfo"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:gravity="center|clip_vertical|center_horizontal"
+            android:layout_below="@+id/textBtnSetting"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/ListLayout"
+        android:background="#7c1b4d"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="목록"
+            android:id="@+id/textView"
+            android:layout_weight="0.06"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:textSize="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="≡"
+            android:id="@+id/Viewer"
+            android:layout_weight="0.06"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:textSize="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/RemoveLayout"
+        android:background="#fea529"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="목록"
+            android:id="@+id/textView8"
+            android:layout_weight="0.06"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:textSize="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="삭제"
+            android:id="@+id/RemoveButton"
+            android:layout_weight="0.06"
+            android:textColor="#ff0000"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:textSize="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/textView7"
+        android:background="#000000"
+        android:autoText="false"
+        android:layout_below="@+id/ListLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="기본을 설정해주세요."
+        android:id="@+id/textbase"
+        android:layout_below="@+id/ListLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_margin="5dp"
+        android:visibility="visible"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:visibility="visible"
+        android:layout_below="@+id/textbase"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp" />
+
+</RelativeLayout>

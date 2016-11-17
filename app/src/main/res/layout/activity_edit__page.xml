@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mod.sunjae.assist.Add_Page"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:visibility="visible"
+        android:id="@+id/relativeLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/editName"
+            android:layout_gravity="right"
+            android:textColorHint="#8d8d8d"
+            android:background="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_marginTop="35dp"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:maxLength="15"
+            android:hint="15자 내외로 입력해주세요."
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="이름 : "
+            android:id="@+id/textView2"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="음량 설정"
+            android:id="@+id/textView4"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/editName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/sEditBarAudio"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:max="100"
+            android:progress="0"
+            android:indeterminate="false"
+            android:layout_alignRight="@+id/editName"
+            android:layout_alignEnd="@+id/editName"
+            android:progressDrawable="@drawable/progress_draw" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="밝기 설정"
+            android:id="@+id/textView5"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_below="@+id/cEditBoxMu"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/sEditBarLight"
+            android:max="250"
+            android:progress="10"
+            android:indeterminate="false"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/editName"
+            android:layout_alignEnd="@+id/editName"
+            android:progressDrawable="@drawable/progress_draw" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="WIFI 설정"
+            android:id="@+id/textView6"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_below="@+id/sEditBarLight"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:id="@+id/textEditWIFI"
+            android:text="클릭!"
+            android:textSize="25dp"
+            android:textColor="#b6b6b6"
+            android:background="#fefefe"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="무음"
+            android:id="@+id/cEditBoxMu"
+            android:checked="false"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_below="@+id/sEditBarAudio"
+            android:layout_toRightOf="@+id/cEditBoxJin"
+            android:layout_toEndOf="@+id/cEditBoxJin"
+            android:layout_marginLeft="30dp" />
+
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="진동"
+            android:id="@+id/cEditBoxJin"
+            android:checked="false"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_above="@+id/textView5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연결 여부"
+            android:id="@+id/cEditBoxWIFI"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:checked="false"
+            android:layout_below="@+id/textEditWIFI"
+            android:layout_alignLeft="@+id/textEditWIFI"
+            android:layout_alignStart="@+id/textEditWIFI" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baselayout_w"
+        android:id="@+id/EditWIFILayout"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/EditListview"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1"
+        android:id="@+id/relativeLayout2"
+        android:background="#7c1b4d"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="＜변경"
+            android:id="@+id/textEditBack"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:id="@+id/btnEditOK"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/textView3"
+        android:background="#000000"
+        android:autoText="false"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
